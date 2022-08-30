@@ -1,0 +1,25 @@
+.invalido {
+    border: red solid 2px;
+}
+
+form {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+form > div {
+    display: block;
+    width: 100%;
+}
+
+form > div > label {
+    display: block;
+    width: 100%;
+}
+
+form > div > input {
+    display: block;
+    width: 100%;
+}

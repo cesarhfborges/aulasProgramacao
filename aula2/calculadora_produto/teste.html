@@ -1,0 +1,18 @@
+<button (click)="evento()">click</button>
+
+<script>
+    async function teste(callback) {
+        const resposta = await fetch('http://www.google.com.br');
+        callback(resposta);
+    }
+
+
+    function evento() {
+        return new Promise(async (resolve, reject) => {
+            teste(res => {
+                console.log('teste');
+                resolve();
+            });
+        });
+    }
+</script>
